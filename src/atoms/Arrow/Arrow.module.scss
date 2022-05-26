@@ -1,0 +1,10 @@
+.arrow {
+  background: 0;
+  height: 2rem;
+  width: 2rem;
+  transition: all 300ms ease;
+  &:hover {
+    height: 3rem;
+    width: 3rem;
+  }
+}

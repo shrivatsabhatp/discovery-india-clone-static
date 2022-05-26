@@ -1,0 +1,20 @@
+.playIcon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  .circle {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #fff;
+    background-color: #26272763;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-block: 0.5rem;
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

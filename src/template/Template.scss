@@ -1,0 +1,62 @@
+#root {
+  display: grid;
+  grid-template-areas:
+    "hd"
+    "by"
+    "ft";
+  width: 100%;
+}
+
+header {
+  grid-area: "hd";
+  background-color: #121317;
+  width: 100%;
+  height: 4.25rem;
+  top: 0;
+}
+main {
+  grid-area: "by";
+}
+footer {
+  grid-area: "ft";
+  background-color: #121317;
+  width: 100%;
+  bottom: 0;
+  align-items: end;
+}
+
+button {
+  padding: 0.25rem 0.7rem;
+  background-color: #2175d9;
+  color: #fff;
+  font-size: 1rem;
+  background-image: linear-gradient(
+    to right top,
+    #2175d9,
+    hsl(213, 74%, 46%),
+    hsl(213, 74%, 52%),
+    #2175d9
+  );
+  border-radius: 0.2rem;
+  border: none;
+}
+
+input {
+  font-size: 1rem;
+  padding-block: 0.5rem;
+  background-color: #121317;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid hsl(0, 0%, 50%);
+  transition: border-color 400ms ease;
+}
+input:focus {
+  border-color: #2175d9;
+}
+input::placeholder {
+  font-size: 0.95rem;
+}
+input::-webkit-search-cancel-button {
+  display: none;
+}

@@ -1,0 +1,16 @@
+.searchbar {
+  width: 20rem;
+  display: flex;
+  border-bottom: 1px solid #999;
+  transition: border-color 400ms ease;
+  &:focus-within {
+    border-color: #2175d9;
+  }
+  .search__icon {
+    transform: all 200ms ease;
+  }
+  .input {
+    width: 100%;
+    border: none;
+  }
+}

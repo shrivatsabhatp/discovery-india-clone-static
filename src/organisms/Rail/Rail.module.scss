@@ -1,0 +1,41 @@
+.rail__wrap {
+  background-color: #121317;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.arrow {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.01;
+  &:hover {
+    opacity: 1;
+  }
+  &--right {
+    right: 0;
+  }
+  &--left {
+    left: 0;
+  }
+}
+
+.rail {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 4rem;
+
+  &__inner {
+    overflow: hidden;
+  }
+  &__inner__items {
+    display: flex;
+    gap: 01.25rem;
+    flex-shrink: 0;
+    width: 100%;
+    transition: transform 250ms ease;
+  }
+}

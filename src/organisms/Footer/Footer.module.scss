@@ -1,0 +1,45 @@
+.footer {
+  padding-top: 2rem;
+  background-color: #121317;
+  color: rgb(146, 146, 146);
+
+  &__wrap {
+    width: 100%;
+    margin-inline: auto;
+    max-width: 1440px;
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  &__primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    p {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    &__right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      span {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+  }
+
+  &__secondary {
+    div {
+      display: flex;
+      gap: 1.5rem;
+      padding-block: 1rem;
+      .left__most {
+        justify-self: flex-end;
+        align-self: flex-end;
+        text-align: right;
+      }
+    }
+  }
+}
