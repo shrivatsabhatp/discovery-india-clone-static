@@ -12,7 +12,12 @@ const DetailRail = (props) => {
         </div>
         <div className={styles.rail__container}>
           {data.map((show) => (
-            <Staticrail key={show.title} {...show} portrait={props.portrait} />
+            <Staticrail
+              key={show.title}
+              {...show}
+              portrait={props.portrait}
+              detail={props.detail}
+            />
           ))}
         </div>
       </div>

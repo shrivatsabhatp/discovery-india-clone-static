@@ -13,12 +13,12 @@ const Card = (props) => {
         </div>
       ) : null}
       <img src={props.src} />
-      {props.children}
       {props.isNewEpisode ? (
         <div className={styles.badge}>
           <Badge isNewEpisode />
         </div>
       ) : null}
+      {props.children}
     </div>
   );
 };

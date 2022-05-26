@@ -1,9 +1,62 @@
-.card {
+.card,
+.staticCard {
   width: 342px;
   height: 192px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .portrait {
+  position: relative;
   width: 225px;
   height: 315px;
+  z-index: 1;
+}
+
+.withMeta {
+  height: 224px;
+  p {
+    font-size: 0.9rem;
+  }
+  h4 {
+    margin-top: 0.125rem;
+  }
+}
+
+.detail {
+  &:hover {
+    opacity: 1;
+  }
+  opacity: 0;
+  border-radius: 0.4rem;
+  position: absolute;
+  background-image: linear-gradient(to top, rgb(24, 24, 24), rgba(0, 0, 0, 0));
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  .PlayIcon {
+    padding-bottom: 2rem;
+  }
+  .meta {
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .heart {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
 }

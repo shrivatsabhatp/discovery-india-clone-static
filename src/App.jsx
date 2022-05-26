@@ -14,6 +14,7 @@ function App() {
         <Rail data={genre_rail} />
         <DetailRail data={rail_1} />
         <DetailRail data={rail_2} portrait heading={"Stream For Free Now"} />
+        <DetailRail data={rail_1} detail heading={"Free Now"} />
       </Template>
     </IconContext.Provider>
   );
