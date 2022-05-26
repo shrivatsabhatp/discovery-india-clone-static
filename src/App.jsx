@@ -1,21 +1,11 @@
 import "./template/Template.scss";
 import { IconContext } from "react-icons";
-import Template from "./template/Template";
-import Carousal from "./organisms/Carousal";
-import Rail from "./organisms/Rail";
-import DetailRail from "./organisms/DetailRail";
-import { carousal, genre_rail, rail_1, rail_2 } from "./assets/data";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
-      <Template>
-        <Carousal data={carousal} />
-        <Rail data={genre_rail} />
-        <DetailRail data={rail_1} />
-        <DetailRail data={rail_2} portrait heading={"Stream For Free Now"} />
-        <DetailRail data={rail_1} detail heading={"Free Now"} />
-      </Template>
+      <Home />
     </IconContext.Provider>
   );
 }
